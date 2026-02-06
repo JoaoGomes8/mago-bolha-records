@@ -1,0 +1,67 @@
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px); 
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Chrome, Safari e Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE, Edge e Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.partner-logo {
+  height: 40px; 
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.champion-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+}
+
+.champion-card:hover {
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.6); /* Brilho Indigo */
+  border-color: #22d3ee; /* Borda Cyan */
+}

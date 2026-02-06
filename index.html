@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Mago Bolha - Recordes Oficiais</title>
+
+    <meta
+      name="description"
+      content="Entra no Hall of Fame do Mago Bolha. Descobre os recordes e os maiores feiticeiros das plataformas!"
+    />
+    <meta property="og:title" content="O Mago Bolha - Hall of Fame" />
+    <meta
+      property="og:description"
+      content="Plataforma oficial de recordes do mundo mágico."
+    />
+    <meta property="og:image" content="assets/img/og-image.webp" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-slate-900 text-white font-['Montserrat']">
+    <header
+      class="sticky top-0 z-50 bg-gradient-to-r from-[#4b0082] to-[#1a1a2e] shadow-lg"
+    >
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a
+            href="#"
+            class="text-lg md:text-xl font-['Press_Start_2P'] text-white"
+            >Mago Bolha</a
+          >
+
+          <button
+            id="menu-btn"
+            class="text-white focus:outline-none md:hidden"
+            aria-label="Abrir Menu"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="hidden md:flex space-x-8">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#recordes" class="nav-link">Recordes</a>
+            <a href="#testemunhos" class="nav-link">Comunidade</a>
+          </div>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden flex-col mt-4 space-y-4 md:hidden border-t border-indigo-500/30 pt-4"
+        >
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#recordes" class="nav-link">Recordes</a>
+          <a href="#testemunhos" class="nav-link">Comunidade</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre" class="min-h-[80vh] flex items-center py-16 px-6">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center gap-12"
+        >
+          <div class="flex-1 text-center md:text-left">
+            <h1
+              class="font-['Press_Start_2P'] text-2xl md:text-4xl lg:text-5xl leading-tight mb-6 text-indigo-400"
+            >
+              O Mago Bolha
+            </h1>
+            <p class="text-lg text-slate-300 mb-8 max-w-xl">
+              Prepara as tuas poções e ajusta os teus reflexos. Entra no mundo
+              onde a gravidade é apenas uma sugestão e as bolhas são o teu maior
+              poder.
+            </p>
+            <button
+              class="bg-indigo-600 hover:bg-cyan-500 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300"
+            >
+              Explorar Reino
+            </button>
+          </div>
+
+          <div class="flex-1 flex justify-center items-center">
+            <div class="relative">
+              <img
+                src="assets/imgs/mago_bolha.png"
+                alt="Mago Bolha"
+                class="w-64 md:w-80 lg:w-96 rounded-3xl border-4 border-indigo-500/30 backdrop-blur-sm p-2 drop-shadow-[0_0_30px_rgba(75,0,130,0.8)] animate-floating hover:brightness-110 transition-all duration-300"
+              />
+
+              <div
+                class="w-32 h-4 bg-black/40 rounded-[100%] mx-auto mt-4 blur-md"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recordes" class="py-20 bg-slate-800/30">
+        <div class="container mx-auto px-6">
+          <h2
+            class="font-['Press_Start_2P'] text-2xl md:text-3xl text-center mb-16 text-yellow-400 tracking-wider"
+          >
+            Hall of Fame
+          </h2>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-sm mx-auto md:max-w-none"
+          >
+            <article
+              class="champion-card group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-500 hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="assets/imgs/mago_bolhas.png"
+                  alt="Mestre das Bolhas"
+                  class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 text-center">
+                <h3 class="font-bold text-2xl mb-3 text-white">
+                  Mestre das Bolhas
+                </h3>
+                <div
+                  class="inline-block px-4 py-2 bg-indigo-900/50 rounded-full border border-indigo-500/30"
+                >
+                  <p class="text-cyan-400 font-['Press_Start_2P'] text-xs">
+                    95.000 pts
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="champion-card group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-500 hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="assets/imgs/feiticeiro_agil.png"
+                  alt="Feiticeiro Ágil"
+                  class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 text-center">
+                <h3 class="font-bold text-2xl mb-3 text-white">
+                  Feiticeiro Ágil
+                </h3>
+                <div
+                  class="inline-block px-4 py-2 bg-indigo-900/50 rounded-full border border-indigo-500/30"
+                >
+                  <p class="text-cyan-400 font-['Press_Start_2P'] text-xs">
+                    82.500 pts
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="champion-card group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-500 hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="assets/imgs/lenda_do_ar.png"
+                  alt="Lenda do Ar"
+                  class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 text-center">
+                <h3 class="font-bold text-2xl mb-3 text-white">Lenda do Ar</h3>
+                <div
+                  class="inline-block px-4 py-2 bg-indigo-900/50 rounded-full border border-indigo-500/30"
+                >
+                  <p class="text-cyan-400 font-['Press_Start_2P'] text-xs">
+                    79.000 pts
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article
+              class="champion-card group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-500 hover:-translate-y-2"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="assets/imgs/mago_bolhas.png"
+                  alt="Mestre das Bolhas"
+                  class="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 text-center">
+                <h3 class="font-bold text-2xl mb-3 text-white">
+                  Mestre das Bolhas
+                </h3>
+                <div
+                  class="inline-block px-4 py-2 bg-indigo-900/50 rounded-full border border-indigo-500/30"
+                >
+                  <p class="text-cyan-400 font-['Press_Start_2P'] text-xs">
+                    95.000 pts
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            
+
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="testemunhos" class="py-20 bg-slate-900 overflow-hidden">
+        <div class="container mx-auto px-6">
+          <h2
+            class="font-['Press_Start_2P'] text-2xl text-center mb-16 text-cyan-400"
+          >
+            Vozes do Reino
+          </h2>
+
+          <div
+            id="carousel-inner"
+            class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-10 scrollbar-hide scroll-smooth"
+          >
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/sir_bubbles.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "A precisão dos saltos é digna dos clássicos de arcade!"
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Sir Bubbles
+              </h4>
+            </article>
+
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/lady.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span class="text-slate-600">★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "O desafio é real. Chegar ao topo exige poções de paciência."
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Lady Glitch
+              </h4>
+            </article>
+
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/mestre_pixel.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "Simplesmente viciante. O design é pura nostalgia 8-bit."
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Mestre Pixel
+              </h4>
+            </article>
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/lady.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span class="text-slate-600">★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "O desafio é real. Chegar ao topo exige poções de paciência."
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Lady Glitch
+              </h4>
+            </article>
+
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/mestre_pixel.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "Simplesmente viciante. O design é pura nostalgia 8-bit."
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Mestre Pixel
+              </h4>
+            </article>
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/lady.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span class="text-slate-600">★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "O desafio é real. Chegar ao topo exige poções de paciência."
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Lady Glitch
+              </h4>
+            </article>
+
+            <article
+              class="min-w-[85%] md:min-w-[30%] snap-center bg-slate-800 p-8 rounded-2xl border border-indigo-500/20 shadow-xl flex flex-col items-center text-center"
+            >
+              <img
+                src="assets/imgs/mestre_pixel.png"
+                class="w-20 h-20 rounded-full border-2 border-cyan-500 mb-4 object-cover"
+              />
+              <div class="flex space-x-1 mb-4 text-yellow-400 text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p class="text-slate-300 italic mb-6">
+                "Simplesmente viciante. O design é pura nostalgia 8-bit."
+              </p>
+              <h4 class="font-bold text-white uppercase tracking-wider">
+                Mestre Pixel
+              </h4>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-16 bg-slate-900/50 border-y border-slate-800 overflow-hidden"
+      >
+        <div class="container mx-auto px-6 mb-10 text-center">
+          <p
+            class="text-slate-500 font-['Press_Start_2P'] text-[10px] uppercase tracking-[0.3em]"
+          >
+            Apoio Místico de
+          </p>
+        </div>
+
+        <div
+          class="flex flex-nowrap gap-12 animate-marquee whitespace-nowrap group"
+        >
+          <div class="flex gap-12 items-center shrink-0">
+            <img
+              src="assets/imgs/bolhas.png"
+              alt="Bubble Studios"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/eagle.png"
+              alt="Magic Tech"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/bolhas.png"
+              alt="Pixel Craft"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/eagle.png"
+              alt="Wizard Games"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/bolhas.png"
+              alt="Nebula Apps"
+              class="partner-logo"
+            />
+          </div>
+          <div class="flex gap-12 items-center shrink-0">
+            <img
+              src="assets/imgs/eagle.png"
+              alt="Bubble Studios"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/bolhas.png"
+              alt="Magic Tech"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/eagle.png"
+              alt="Pixel Craft"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/bolhas.png"
+              alt="Wizard Games"
+              class="partner-logo"
+            />
+            <img
+              src="assets/imgs/eagle.png"
+              alt="Nebula Apps"
+              class="partner-logo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-10 text-center border-t border-slate-800">
+      <p>&copy; 2026 - João Gomes</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
