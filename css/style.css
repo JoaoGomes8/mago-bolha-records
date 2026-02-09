@@ -41,16 +41,6 @@
   transform: scale(1.1);
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 20s linear infinite;
-}
 
 .group:hover .animate-marquee {
   animation-play-state: paused;
@@ -62,6 +52,6 @@
 }
 
 .champion-card:hover {
-  box-shadow: 0 0 30px rgba(79, 70, 229, 0.6); /* Brilho Indigo */
-  border-color: #22d3ee; /* Borda Cyan */
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.6);
+  border-color: #22d3ee; 
 }
